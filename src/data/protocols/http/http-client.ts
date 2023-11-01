@@ -2,7 +2,7 @@ import { httpClientRequest } from "./http-client-request";
 import { HttpClientResponse } from "./http-client-response";
 
 export type HttpClient<ResponseType = any, ErrorType = any> = {
-  request(data : httpClientRequest) :  Promise<HttpClientResponse<ResponseType, ErrorType>>;
+  request(data : httpClientRequest): Promise<HttpClientResponse<ResponseType, ErrorType>>
 }
 
 export type HttpMethod = 'post' | 'get' | 'put' | 'delete'
